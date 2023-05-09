@@ -1,0 +1,22 @@
+.social-media-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+  }
+  
+  .social-link {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    color: #cccccc;
+  }
+  

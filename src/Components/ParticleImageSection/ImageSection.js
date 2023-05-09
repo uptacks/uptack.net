@@ -1,6 +1,6 @@
 import React from 'react';
 import './ImageSection.css';
-import ParticlesBackground from './Components/ParticlesBackground/ParticlesBackground';
+import ParticlesBackground from '../ParticlesBackground/ParticlesBackground';
 
 
 const ImageSection = () => {

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Header.css';
 import { useState, useEffect } from 'react';
-import headerLogo from './img/pfp.jpeg';
+import headerLogo from '../../img/pfp.jpeg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -33,9 +34,9 @@ const Header = () => {
       <img src={headerLogo} alt="you" className="header-logo" />
       <h1 className="header-title">UPTACK</h1>
       <nav className="header-nav">
-        <a href="your-link-1" className="header-link">Link 1</a>
-        <a href="your-link-2" className="header-link">Link 2</a>
-        <a href="your-link-3" className="header-link">Link 3</a>
+      <Link to="/" className="header-link">Home</Link>
+      <Link to="/writing" className="header-link">Writing</Link>
+      <Link to="/research" className="header-link">Research</Link>
       </nav>
     </header>
   );

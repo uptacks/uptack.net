@@ -1,19 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './Header';
-import ImageSection from './ImageSection';
-import TextSection from './TextSection';
-import Banner from './Banner';
-
+import HomePage from './Pages/HomePage.js';
+import Research from './Pages/Research.js';
+import Writing from './Pages/Writing.js';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <ImageSection />
-      <TextSection />
-      <Banner />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          console.log("Hello World");
+          <Route path="/research" element={<Research title="Research" />} />
+          <Route path="/writing" element={<Writing title="Writing"/>} />
+          <Route exact path="/" element={<HomePage title="UPTACK"/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
